@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/xfheaderpoc",
+        "create path (nt:unstructured) /content/dam/xfheaderpoc/jcr:content",
+        "set properties on /content/dam/xfheaderpoc/jcr:content\n  set cq:conf{String} to /conf/xfheaderpoc\n  set jcr:title{String} to \"Experience Fragment Header Proof of Concept\"\nend"
+    ]
+}

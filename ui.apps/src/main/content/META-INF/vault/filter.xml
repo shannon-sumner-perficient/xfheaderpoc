@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/xfheaderpoc/clientlibs"/>
+    <filter root="/apps/xfheaderpoc/components"/>
+    <filter root="/apps/xfheaderpoc/i18n"/>
+</workspaceFilter>
