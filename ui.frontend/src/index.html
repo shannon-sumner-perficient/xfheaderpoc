@@ -1,124 +1,278 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
+  <head>
+    <meta charset="UTF-8" />
     <title>Static Frontend file</title>
-    <meta name="template" content="page-content"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" href="/etc.clientlibs/xfheaderpoc/clientlibs/clientlib-base.css" type="text/css">
-    <script type="text/javascript" src="/etc.clientlibs/xfheaderpoc/clientlibs/clientlib-dependencies.js"></script>
-    <link rel="stylesheet" href="/etc.clientlibs/xfheaderpoc/clientlibs/clientlib-dependencies.css" type="text/css">
-    <link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon" />
-</head>
-<body class="page basicpage">
-<div class="root container responsivegrid">
-    <div class="cmp-container">
-        <header class="experiencefragment">
-            <div class="cmp-experiencefragment">
-                <div class="cmp-container">
-                    <div class="navigation">
-                        <nav class="cmp-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-                            <ul class="cmp-navigation__group">
-                                <li class="cmp-navigation__item cmp-navigation__item--level-0 cmp-navigation__item--active">
-                                    <a href="/content/xfheaderpoc/us/en.html" title="Experience Fragment Header Proof of Concept" aria-current="page" class="cmp-navigation__item-link">Experience Fragment Header Proof of Concept</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="languagenavigation">
-                        <nav class="cmp-languagenavigation">
-                            <ul class="cmp-languagenavigation__group">
-                                <li class="cmp-languagenavigation__item cmp-languagenavigation__item--langcode-en cmp-languagenavigation__item--level-0">
-                                    <span class="cmp-languagenavigation__item-title" lang="en">United States</span>
-                                    <ul class="cmp-languagenavigation__group">
-                                        <li class="cmp-languagenavigation__item cmp-languagenavigation__item--langcode-en cmp-languagenavigation__item--level-1">
-                                            <a class="cmp-languagenavigation__item-link" href="/content/xfheaderpoc/us/en.html" hreflang="en" lang="en" rel="alternate" title="English">English</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="search">
-                        <section class="cmp-search" role="search" data-cmp-is="search" data-cmp-min-length="3" data-cmp-results-size="10">
-                            <form class="cmp-search__form" data-cmp-hook-search="form" method="get" action="/content/xfheaderpoc/us/en.searchresults.json/_jcr_content/root/search" autocomplete="off">
-                                <div class="cmp-search__field">
-                                    <i class="cmp-search__icon" data-cmp-hook-search="icon"></i>
-                                    <span class="cmp-search__loading-indicator" data-cmp-hook-search="loadingIndicator"></span>
-                                    <input class="cmp-search__input" data-cmp-hook-search="input" type="text" name="fulltext" placeholder="Search" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-invalid="false"/>
-                                    <button class="cmp-search__clear" data-cmp-hook-search="clear">
-                                        <i class="cmp-search__clear-icon"></i>
-                                    </button>
-                                </div>
-                            </form>
-                            <div class="cmp-search__results" data-cmp-hook-search="results" role="listbox" aria-multiselectable="false"></div>
-                            <script data-cmp-hook-search="itemTemplate" type="x-template">
-                                <a class="cmp-search__item" data-cmp-hook-search="item">
-                                    <span class="cmp-search__item-title" data-cmp-hook-search="itemTitle"></span>
-                                </a>
-                            </script>
-                        </section></div>
-                </div>
+    <meta name="template" content="page-content" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="/etc.clientlibs/xfheaderpoc/clientlibs/clientlib-dependencies.js"
+      type="text/javascript"
+    ></script>
+    <link
+      type="text/css"
+      href="/etc.clientlibs/xfheaderpoc/clientlibs/clientlib-dependencies.css"
+      rel="stylesheet"
+    />
+    <link
+      type="image/x-icon"
+      href="./resources/images/favicon.ico"
+      rel="icon"
+    />
+  </head>
+  <body class="page basicpage">
+    <div class="container root responsivegrid">
+      <div class="cmp-container">
+        <header class="experiencefragment header">
+          <nav class="header-nav" aria-label="Header navigation">
+            <div class="header-nav__container--mobile">
+              <div></div>
+              <div class="header-nav__logo header-nav__logo--mobile">
+                <a
+                  href="#"
+                  class="header-nav__link header-nav__logo-link"
+                  title="Demo Logo"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 120 25.8"
+                  >
+                    <path
+                      d="M19.9 17.5v-2.1c0-4.5-1.5-5.5-6.5-5.5h-4c-5 0-6.5 1-6.5 5.5v2.1c0 4.6 1.4 5.6 6.5 5.6h4c5.1 0 6.5-1 6.5-5.6M8.6 25.8c-6.3 0-8.6-2.3-8.6-8V15c0-5.5 2.5-7.7 8.6-7.7h5.5c2.6 0 4.4.7 5.6 2.5V0h2.8v25.5H20v-2.9c-1.1 2.6-3.2 3.2-6.7 3.2H8.5m38.7-11.3v-.4c0-3.6-1.8-4.2-6.1-4.2h-4.5c-4.3 0-6.1 1.1-6.1 4.7h16.7Zm3 1.2v1.4H30.5v1c0 3.7 1.5 5.1 6.2 5.1h4.7c4 0 5.9-.9 5.9-3.1v-.2h3v.5c0 3.4-2.8 5.3-8.2 5.3h-5.4c-6.5 0-9.1-2.2-9.1-7.8V15c0-5.6 2.5-7.9 9.1-7.9h4.5c6.7 0 9.1 2.1 9.1 8.5m4.7 9.9v-18h2.8v2.3c1.2-2.1 3.7-2.5 8.1-2.5s7.3.6 8.5 3.3c1.2-2.3 3.8-3.3 7.9-3.3 7 0 9.9 1.7 9.9 6.6v11.8h-2.6v-11c0-1.7-.1-2.8-1.2-3.5-.9-.6-2.9-1.1-5.9-1.1-4.9 0-7.2 1.2-7.2 4.4v11.2h-2.7V14.5c0-3.5-1.2-4.4-6.8-4.4S58 11.4 58 14.8v10.9h-2.8Zm55.6-2.4c5.1 0 6.5-1 6.5-5.6v-2.1c0-4.5-1.5-5.5-6.5-5.5h-4.7c-5 0-6.5 1-6.5 5.5v2.1c0 4.6 1.4 5.6 6.5 5.6zm-14.1-5.3V15c0-5.5 2.5-7.7 8.6-7.7h6.2c6.2 0 8.6 2.2 8.6 7.7v2.8c0 5.6-2.3 8-8.6 8h-6.2c-6.3 0-8.6-2.3-8.6-8"
+                      fill="#f2f2f2"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="header-nav__buttons header-nav__buttons--mobile">
+                <button
+                  class="header-nav__link header-nav__button header-nav__menu-button"
+                  type="button"
+                  aria-label="Toggle Menu"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 438.9"
+                  >
+                    <path
+                      d="M0 36.6C0 16.3 16.3 0 36.6 0h438.9c20.2 0 36.6 16.3 36.6 36.6s-16.3 36.6-36.6 36.6H36.6C16.3 73.1 0 56.8 0 36.6m0 182.8c0-20.2 16.3-36.6 36.6-36.6h438.9c20.2 0 36.6 16.3 36.6 36.6S495.8 256 475.5 256H36.6C16.4 256 0 239.7 0 219.4m512 182.9c0 20.2-16.3 36.6-36.6 36.6H36.6C16.4 438.9 0 422.6 0 402.3s16.3-36.6 36.6-36.6h438.9c20.2 0 36.6 16.3 36.6 36.6Z"
+                      fill="#f2f2f2"
+                    />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M496.8 87.4c20-20 20-52.5 0-72.4-20-20-52.5-20-72.4 0L256 183.6 87.4 15.2c-20-20-52.4-20-72.4 0s-20 52.5 0 72.4L183.6 256 15.2 424.6c-20 20-20 52.5 0 72.4 20 20 52.5 20 72.4 0L256 328.4l168.6 168.4c20 20 52.5 20 72.4 0 20-20 20-52.5 0-72.4L328.4 256z"
+                      fill="#f2f2f2"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
+            <div class="header-nav__container">
+              <ul class="header-nav__links">
+                <li
+                  class="header-nav__list-item header-nav__list-item--with-flyout"
+                >
+                  <button class="header-nav__link" type="button">Moe</button>
+                  <div class="flyout">
+                    <div class="flyout__content flyout__content--two-columns">
+                      <div>
+                        <img
+                          class="flyout__content__image"
+                          src="./resources/images/moe.jpeg"
+                          alt="Moe Howard"
+                        />
+                      </div>
+                      <div>
+                        <h2 class="flyout__content__heading">Moe Howard</h2>
+                        <ul class="flyout__content__unordered-list">
+                          <li><b>Born:</b>June 19, 1897</li>
+                          <li><b>Died:</b>May 4, 1975</li>
+                          <li><b>Occupations:</b> Comedian, Actor</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="header-nav__list-item header-nav__list-item--with-flyout"
+                >
+                  <button class="header-nav__link" type="button">Larry</button>
+                  <div class="flyout">
+                    <div class="flyout__content flyout__content--two-columns">
+                      <div>
+                        <img
+                          class="flyout__content__image"
+                          src="./resources/images/larry.jpeg"
+                          alt="Larry Fine"
+                        />
+                      </div>
+                      <div>
+                        <h2 class="flyout__content__heading">Larry Fine</h2>
+                        <ul class="flyout__content__unordered-list">
+                          <li><b>Born:</b>October 5, 1902</li>
+                          <li><b>Died:</b>January 24, 1975</li>
+                          <li>
+                            <b>Occupations:</b>Comedian, Actor,<br />Musician
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="header-nav__list-item header-nav__list-item--with-flyout"
+                >
+                  <button class="header-nav__link" type="button">Curly</button>
+                  <div class="flyout">
+                    <div class="flyout__content flyout__content--two-columns">
+                      <div>
+                        <img
+                          class="flyout__content__image"
+                          src="./resources/images/curly.jpeg"
+                          alt="Curly Howard"
+                        />
+                      </div>
+                      <div>
+                        <h2 class="flyout__content__heading">Curly Howard</h2>
+                        <ul class="flyout__content__unordered-list">
+                          <li><b>Born:</b>October 22, 1903</li>
+                          <li><b>Died:</b>January 18, 1952</li>
+                          <li><b>Occupations:</b>Comedian, Actor</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="header-nav__list-item header-nav__list-item--with-flyout"
+                >
+                  <button class="header-nav__link" type="button">Shemp</button>
+                  <div class="flyout">
+                    <div class="flyout__content flyout__content--two-columns">
+                      <div>
+                        <img
+                          class="flyout__content__image"
+                          src="./resources/images/shemp.jpeg"
+                          alt="Shemp Howard"
+                        />
+                      </div>
+                      <div>
+                        <h2 class="flyout__content__heading">Shemp Howard</h2>
+                        <ul class="flyout__content__unordered-list">
+                          <li><b>Born:</b>March 11, 1895</li>
+                          <li><b>Died:</b>November 22, 1955</li>
+                          <li><b>Occupations:</b>Comedian, Actor</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="header-nav__logo">
+                <a
+                  href="#"
+                  class="header-nav__link header-nav__logo-link"
+                  title="Demo Logo"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 120 25.8"
+                  >
+                    <path
+                      d="M19.9 17.5v-2.1c0-4.5-1.5-5.5-6.5-5.5h-4c-5 0-6.5 1-6.5 5.5v2.1c0 4.6 1.4 5.6 6.5 5.6h4c5.1 0 6.5-1 6.5-5.6M8.6 25.8c-6.3 0-8.6-2.3-8.6-8V15c0-5.5 2.5-7.7 8.6-7.7h5.5c2.6 0 4.4.7 5.6 2.5V0h2.8v25.5H20v-2.9c-1.1 2.6-3.2 3.2-6.7 3.2H8.5m38.7-11.3v-.4c0-3.6-1.8-4.2-6.1-4.2h-4.5c-4.3 0-6.1 1.1-6.1 4.7h16.7Zm3 1.2v1.4H30.5v1c0 3.7 1.5 5.1 6.2 5.1h4.7c4 0 5.9-.9 5.9-3.1v-.2h3v.5c0 3.4-2.8 5.3-8.2 5.3h-5.4c-6.5 0-9.1-2.2-9.1-7.8V15c0-5.6 2.5-7.9 9.1-7.9h4.5c6.7 0 9.1 2.1 9.1 8.5m4.7 9.9v-18h2.8v2.3c1.2-2.1 3.7-2.5 8.1-2.5s7.3.6 8.5 3.3c1.2-2.3 3.8-3.3 7.9-3.3 7 0 9.9 1.7 9.9 6.6v11.8h-2.6v-11c0-1.7-.1-2.8-1.2-3.5-.9-.6-2.9-1.1-5.9-1.1-4.9 0-7.2 1.2-7.2 4.4v11.2h-2.7V14.5c0-3.5-1.2-4.4-6.8-4.4S58 11.4 58 14.8v10.9h-2.8Zm55.6-2.4c5.1 0 6.5-1 6.5-5.6v-2.1c0-4.5-1.5-5.5-6.5-5.5h-4.7c-5 0-6.5 1-6.5 5.5v2.1c0 4.6 1.4 5.6 6.5 5.6zm-14.1-5.3V15c0-5.5 2.5-7.7 8.6-7.7h6.2c6.2 0 8.6 2.2 8.6 7.7v2.8c0 5.6-2.3 8-8.6 8h-6.2c-6.3 0-8.6-2.3-8.6-8"
+                      fill="#f2f2f2"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <ul class="header-nav__buttons">
+                <li
+                  class="header-nav__list-item header-nav__list-item--with-flyout"
+                >
+                  <button
+                    class="header-nav__link header-nav__button"
+                    type="button"
+                    aria-labelledby="my-account"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z"
+                        fill="#f2f2f2"
+                      />
+                    </svg>
+                    <span id="my-account">My Account</span>
+                  </button>
+                  <div class="flyout">
+                    <div class="flyout__content">
+                      <ul class="flyout__content__unordered-list">
+                        <li>
+                          <a href="#">Sign In</a>
+                        </li>
+                        <li>
+                          <a href="#">Check Order Status</a>
+                        </li>
+                        <li>
+                          <a href="#">Pay My Bill</a>
+                        </li>
+                        <li>
+                          <a href="#">Saved Items</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="header-nav__list-item">
+                  <button
+                    class="header-nav__link header-nav__button"
+                    type="button"
+                    aria-label="Language"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#f2f2f2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="50"
+                        d="M256,487c127.6,0,231-103.4,231-231S383.6,25,256,25h0M256,487c-127.6,0-231-103.4-231-231S128.4,25,256,25M256,487c-65.1-67-102.7-146.2-102.7-231s37.6-164,102.7-231M256,487c65.1-67,102.7-146.2,102.7-231s-37.6-164-102.7-231M461.4,179H50.6M461.4,333H50.6"
+                      />
+                    </svg>
+                  </button>
+                </li>
+                <li class="header-nav__list-item">
+                  <button
+                    class="header-nav__link header-nav__button"
+                    type="button"
+                    aria-label="Search"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                        fill="#f2f2f2"
+                      />
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </header>
-        <main class="container responsivegrid">
-            <div class="cmp-container">
-                <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
-                    <div class="title aem-GridColumn aem-GridColumn--default--12">
-                        <div class="cmp-title">
-                            <h1 class="cmp-title__text">Welcome to Experience Fragment Header Proof of Concept!</h1>
-                        </div>
-                    </div>
-                    <div class="container responsivegrid aem-GridColumn aem-GridColumn--default--12">
-                        <div class="cmp-container">
-                            <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
-                                <div class="text aem-GridColumn aem-GridColumn--default--12">
-                                    <div class="cmp-text">
-                                        <p>This is the main welcome page of your web site. A few notes about this site:</p>
-                                        <ul>
-                                            <li>It is built entirely with the Core Components - see the <a href="https://www.adobe.com/go/aem_cmp_library">Component Library</a> to view the components in all their shapes and forms.</li>
-                                            <li>Only the Hello World component has been built custom to illustrate how further components can be built (which also shows how JavaScript is best initialized for components, so that it also works well with the Page Editor).</li>
-                                            <li>The page header and footer are assembled as Experience Fragments, which <a href="https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html#localized-site-structure">can also be localized if needed</a>.<br />
-                                            </li>
-                                            <li>The Style System is used to insert a sematic &lt;header&gt; and &lt;footer&gt; element to the corresponding Experience Fragment components, as well as a &lt;main&gt; element to the container of the page content. This allows to apply some CSS specifically to these sections of the page.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="helloworld aem-GridColumn aem-GridColumn--default--12"><div class="cmp-helloworld" data-cmp-is="helloworld">
-                                    <h2 class="cmp-helloworld__title">Hello World Component</h2>
-                                    <div class="cmp-helloworld__item">
-                                        <p class="cmp-helloworld__item-label">Model message:</p>
-                                        <pre class="cmp-helloworld__item-output" data-cmp-hook-helloworld="model">Hello World!
-Resource type is: xfheaderpoc/components/helloworld
-Current page is:  /content/xfheaderpoc/us/en
-This is instance: 78f60b4a-a52a-4021-82d5-fb17f5fb95cf
-</pre>
-                                    </div>
-                                </div></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer class="experiencefragment">
-            <div class="cmp-experiencefragment">
-                <div class="cmp-container">
-                    <div class="separator">
-                        <div class="cmp-separator">
-                            <hr class="cmp-separator__horizontal-rule"/>
-                        </div></div>
-                    <div class="text">
-                        <div class="cmp-text">
-                            <p>Copyright 2019, Experience Fragment Header Proof of Concept. All rights reserved.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+      </div>
     </div>
-</div>
-<script type="module" src="./main.ts"></script>
-<script type="text/javascript" src="/etc.clientlibs/xfheaderpoc/clientlibs/clientlib-base.js"></script>
-</body>
+    <script src="./main.ts" type="module"></script>
+    <script
+      src="/etc.clientlibs/xfheaderpoc/clientlibs/clientlib-base.js"
+      type="text/javascript"
+    ></script>
+  </body>
 </html>
