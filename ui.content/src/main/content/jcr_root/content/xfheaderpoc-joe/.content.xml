@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:allowedTemplates="[/conf/xfheaderpoc/settings/wcm/templates/(?!xf-).*]"
+        cq:conf="/conf/xfheaderpoc"
+        cq:lastModified="{Date}2024-09-24T13:06:32.902-04:00"
+        cq:lastModifiedBy="admin"
+        cq:redirectTarget="/content/xfheaderpoc-joe/us/en"
+        cq:template="/conf/xfheaderpoc/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Three Stooges (Joe)"
+        sling:configRef="/conf/xfheaderpoc"
+        sling:redirect="true"
+        sling:redirectStatus="{Long}302"
+        sling:resourceType="xfheaderpoc/components/page">
+        <image
+            jcr:lastModified="{Date}2024-09-24T13:06:32.901-04:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0">
+            <file/>
+        </image>
+    </jcr:content>
+    <us/>
+</jcr:root>

@@ -3,6 +3,7 @@
     <filter root="/conf/xfheaderpoc" mode="merge"/>
     <filter root="/content/xfheaderpoc" mode="merge"/>
     <filter root="/content/xfheaderpoc-classic" mode="merge"/>
+    <filter root="/content/xfheaderpoc-joe" mode="merge"/>
     <filter root="/content/dam/xfheaderpoc" mode="merge">
         <exclude pattern="/content/dam/xfheaderpoc(/.*)?"/>
         <include pattern="/content/dam/xfheaderpoc/jcr:content(/.*)?"/>

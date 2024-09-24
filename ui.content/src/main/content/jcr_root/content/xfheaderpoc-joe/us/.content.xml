@@ -2,12 +2,10 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:tags="[]"
-        cq:template="/libs/cq/experience-fragments/components/experiencefragment/template"
+        cq:redirectTarget="/content/xfheaderpoc/us/en"
+        cq:template="/conf/xfheaderpoc/settings/wcm/templates/joe-content"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Header"
-        sling:resourceType="cq/experience-fragments/components/experiencefragment"/>
-    <master/>
-    <with-shemp/>
-    <with-joe/>
+        jcr:title="us"
+        sling:resourceType="xfheaderpoc/components/page"/>
+    <en/>
 </jcr:root>
