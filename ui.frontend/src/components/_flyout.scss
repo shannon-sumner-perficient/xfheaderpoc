@@ -74,13 +74,18 @@
 
 @media (max-width: 970px) {
   .flyout {
+    display: block;
     inset-block-start: 65px;
     max-block-size: 0;
     opacity: 1;
-    overflow: hidden;
+    overflow: scroll;
     padding: 0 20px;
     position: static;
     visibility: visible;
+  }
+
+  .flyout__image {
+    max-block-size: none;
   }
 
   .header-nav__list-item.open .flyout {
@@ -90,6 +95,9 @@
   .flyout__content {
     background-color: transparent;
     box-shadow: none;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
     padding: 0 20px;
   }
 
