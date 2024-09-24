@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="xfheaderpoc/components/header"
+          alt="Demo Logo"
+          fileReference="/content/dam/xfheaderpoc/logo.svg"
+          linkURL="/content/xfheaderpoc/us/en">
+    <navigationItems jcr:primaryType="nt:unstructured">
+        <item0
+            jcr:primaryType="nt:unstructured"
+            fragmentVariationPath="/content/experience-fragments/xfheaderpoc/us/en/site/stooge/master"
+            title="Moe"/>
+        <item1
+            jcr:primaryType="nt:unstructured"
+            fragmentVariationPath="/content/experience-fragments/xfheaderpoc/us/en/site/stooge/larry"
+            title="Larry"/>
+        <item2
+            jcr:primaryType="nt:unstructured"
+            fragmentVariationPath="/content/experience-fragments/xfheaderpoc/us/en/site/stooge/curly"
+            title="Curly"/>
+    </navigationItems>
+    <accountMenuItems jcr:primaryType="nt:unstructured">
+        <item0
+            jcr:primaryType="nt:unstructured"
+            linkTarget="_self"
+            linkTitleAttribute="Sign In"
+            linkURL="#"/>
+        <item1
+            jcr:primaryType="nt:unstructured"
+            linkTarget="_self"
+            linkTitleAttribute="Check Order Status"
+            linkURL="#"/>
+        <item2
+            jcr:primaryType="nt:unstructured"
+            linkTarget="_self"
+            linkTitleAttribute="Pay My Bill"
+            linkURL="#"/>
+        <item3
+            jcr:primaryType="nt:unstructured"
+            linkTarget="_self"
+            linkTitleAttribute="Saved Items"
+            linkURL="#"/>
+    </accountMenuItems>
+</jcr:root>

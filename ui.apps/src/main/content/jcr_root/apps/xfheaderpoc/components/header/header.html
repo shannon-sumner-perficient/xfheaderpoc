@@ -1,0 +1,141 @@
+<nav
+  class="header-nav"
+  aria-label="Header navigation"
+  data-sly-use.header="com.xfheaderpoc.core.models.Header"
+>
+  <div class="header-nav__container--mobile">
+    <div></div>
+    <div class="header-nav__logo header-nav__logo--mobile">
+      <a
+        href="${header.linkURL @ extension = 'html'}"
+        class="header-nav__link header-nav__logo-link"
+        title="${header.alt}"
+      >
+        <img src="${header.fileReference}" alt="${header.alt}" />
+      </a>
+    </div>
+    <div class="header-nav__buttons header-nav__buttons--mobile">
+      <button
+        class="header-nav__link header-nav__button header-nav__menu-button"
+        type="button"
+        aria-label="Toggle Menu"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 438.9">
+          <path
+            d="M0 36.6C0 16.3 16.3 0 36.6 0h438.9c20.2 0 36.6 16.3 36.6 36.6s-16.3 36.6-36.6 36.6H36.6C16.3 73.1 0 56.8 0 36.6m0 182.8c0-20.2 16.3-36.6 36.6-36.6h438.9c20.2 0 36.6 16.3 36.6 36.6S495.8 256 475.5 256H36.6C16.4 256 0 239.7 0 219.4m512 182.9c0 20.2-16.3 36.6-36.6 36.6H36.6C16.4 438.9 0 422.6 0 402.3s16.3-36.6 36.6-36.6h438.9c20.2 0 36.6 16.3 36.6 36.6Z"
+            fill="#f2f2f2"
+          />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M496.8 87.4c20-20 20-52.5 0-72.4-20-20-52.5-20-72.4 0L256 183.6 87.4 15.2c-20-20-52.4-20-72.4 0s-20 52.5 0 72.4L183.6 256 15.2 424.6c-20 20-20 52.5 0 72.4 20 20 52.5 20 72.4 0L256 328.4l168.6 168.4c20 20 52.5 20 72.4 0 20-20 20-52.5 0-72.4L328.4 256z"
+            fill="#f2f2f2"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="header-nav__container">
+    <ul
+      class="header-nav__links"
+      data-sly-list.navigationItem="${header.navigationMap}"
+    >
+      <li class="header-nav__list-item header-nav__list-item--with-flyout">
+        <button class="header-nav__link" type="button">
+          ${navigationItem.title}
+        </button>
+        <div class="flyout">
+          <sly
+            data-sly-set.selector="content.${request.requestPathInfo.selectorString}"
+            data-sly-resource="${@path=navigationItem.fragmentVariationPath, selectors=selector, wcmmode='disabled'}"
+          />
+        </div>
+      </li>
+    </ul>
+    <div class="header-nav__logo">
+      <a
+        href="${header.linkURL @ extension = 'html'}"
+        class="header-nav__link header-nav__logo-link"
+        title="${header.alt}"
+      >
+        <img src="${header.fileReference}" alt="${header.alt}" />
+      </a>
+    </div>
+    <ul class="header-nav__buttons">
+      <li
+        class="header-nav__list-item header-nav__list-item--with-flyout"
+        data-sly-test="${!header.disableMyAccountMenu}"
+        style="--button-flyout-inset-inline-end: ${header.flyoutInsetInlineEnd @context='styleToken'}"
+      >
+        <button
+          class="header-nav__link header-nav__button"
+          type="button"
+          aria-labelledby="my-account"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z"
+              fill="#f2f2f2"
+            />
+          </svg>
+          <span id="my-account">My Account</span>
+        </button>
+        <div class="flyout">
+          <div class="flyout__content">
+            <ul
+              class="flyout__unordered-list"
+              data-sly-list.accountMenuItem="${header.accountMenuMap}"
+            >
+              <li>
+                <a
+                  href="${accountMenuItem.linkURL @ extension = 'html'}"
+                  target="${accountMenuItem.linkTarget}"
+                  title="${accountMenuItem.linkTitleAttribute}"
+                  >${accountMenuItem.linkTitleAttribute}</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li
+        class="header-nav__list-item"
+        data-sly-test="${!header.disableLanguageSelector}"
+      >
+        <button
+          class="header-nav__link header-nav__button"
+          type="button"
+          aria-label="Language"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              fill="none"
+              stroke="#f2f2f2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="50"
+              d="M256,487c127.6,0,231-103.4,231-231S383.6,25,256,25h0M256,487c-127.6,0-231-103.4-231-231S128.4,25,256,25M256,487c-65.1-67-102.7-146.2-102.7-231s37.6-164,102.7-231M256,487c65.1-67,102.7-146.2,102.7-231s-37.6-164-102.7-231M461.4,179H50.6M461.4,333H50.6"
+            />
+          </svg>
+        </button>
+      </li>
+      <li
+        class="header-nav__list-item"
+        data-sly-test="${!header.disableSearch}"
+      >
+        <button
+          class="header-nav__link header-nav__button"
+          type="button"
+          aria-label="Search"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+              fill="#f2f2f2"
+            />
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>

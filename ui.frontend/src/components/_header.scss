@@ -1,8 +1,19 @@
+header,
 .header {
   background: #242526;
   inline-size: 100%;
   position: fixed;
   z-index: 99;
+}
+
+.aem-AuthorLayer-Edit,
+.aem-AuthorLayer-structure,
+.aem-AuthorLayer-initial,
+.aem-AuthorLayer-Layouting {
+  header,
+  .header {
+    position: static;
+  }
 }
 
 .header-nav {
@@ -75,6 +86,10 @@
   flex-basis: 0;
   flex-grow: 1;
   justify-content: center;
+
+  img {
+    min-inline-size: 120px;
+  }
 }
 
 .header-nav__buttons {

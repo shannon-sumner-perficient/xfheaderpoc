@@ -1,3 +1,7 @@
+:root {
+  --button-flyout-inset-inline-end: 100px;
+}
+
 .flyout {
   display: inline-flex;
   inline-size: auto;
@@ -8,7 +12,7 @@
 }
 
 .header-nav__buttons .flyout {
-  inset-inline-end: 100px;
+  inset-inline-end: var(--button-flyout-inset-inline-end);
 }
 
 .flyout__content {
@@ -20,22 +24,33 @@
   padding: 20px;
 }
 
+.aem-AuthorLayer-Edit,
+.aem-AuthorLayer-structure,
+.aem-AuthorLayer-initial,
+.aem-AuthorLayer-Layouting {
+  .flyout__content {
+    margin: 0 auto;
+    max-inline-size: 500px;
+  }
+}
+
 .flyout__content--two-columns {
   display: grid;
   grid-gap: 0 20px;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: 1fr;
+  justify-items: center;
 }
 
-.flyout__content__image {
+.flyout__image {
   max-block-size: 225px;
 }
 
-.flyout__content__heading {
+.flyout__heading {
   margin-block: 0 0.5em;
 }
 
-.flyout__content__unordered-list {
+.flyout__unordered-list {
   margin: 0;
   padding: 0;
 
