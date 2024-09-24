@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2024-09-24T10:14:01.044-04:00"
+        cq:lastModifiedBy="admin"
+        cq:tags="[]"
+        cq:template="/conf/xfheaderpoc/settings/wcm/templates/xf-web-variation"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="With Shemp"
+        sling:resourceType="xfheaderpoc/components/xfpage">
+        <root
+            jcr:lastModified="{Date}2024-09-24T10:13:36.588-04:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="xfheaderpoc/components/container"
+            layout="simple">
+            <header
+                jcr:created="{Date}2024-09-24T10:13:42.360-04:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-09-24T10:14:01.037-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="xfheaderpoc/components/header"
+                alt="Demo Logo"
+                disableLanguageSelector="false"
+                disableMyAccountMenu="false"
+                disableSearch="false"
+                fileReference="/content/dam/xfheaderpoc/logo.svg"
+                linkTarget="_self"
+                linkURL="/content/xfheaderpoc/us/en">
+                <navigationItems jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        fragmentVariationPath="/content/experience-fragments/xfheaderpoc/us/en/site/stooge/master"
+                        title="Moe"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        fragmentVariationPath="/content/experience-fragments/xfheaderpoc/us/en/site/stooge/larry"
+                        title="Larry"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        fragmentVariationPath="/content/experience-fragments/xfheaderpoc/us/en/site/stooge/shemp"
+                        title="Shemp"/>
+                </navigationItems>
+                <accountMenuItems jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        linkTarget="_self"
+                        linkTitleAttribute="Sign In"
+                        linkURL="#"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        linkTarget="_self"
+                        linkTitleAttribute="Check Order Status"
+                        linkURL="#"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        linkTarget="_self"
+                        linkTitleAttribute="Pay My Bill"
+                        linkURL="#"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        linkTarget="_self"
+                        linkTitleAttribute="Saved Items"
+                        linkURL="#"/>
+                </accountMenuItems>
+            </header>
+        </root>
+    </jcr:content>
+</jcr:root>

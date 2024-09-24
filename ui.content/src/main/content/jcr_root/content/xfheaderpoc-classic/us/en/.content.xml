@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2024-09-24T13:16:30.034-04:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/xfheaderpoc/settings/wcm/templates/classic-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="en"
+        sling:resourceType="xfheaderpoc/components/page"
+        pageTitle="Three Stooges (Classic)">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="xfheaderpoc/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="xfheaderpoc/components/container">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="xfheaderpoc/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="xfheaderpoc/components/container"
+                    layout="responsiveGrid"/>
+            </container>
+        </root>
+        <image
+            jcr:lastModified="{Date}2024-09-24T13:01:06.447-04:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0"/>
+        <cq:featuredimage
+            jcr:lastModified="{Date}2024-09-24T13:16:30.032-04:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/image/v3/image"
+            altValueFromDAM="false"/>
+    </jcr:content>
+</jcr:root>

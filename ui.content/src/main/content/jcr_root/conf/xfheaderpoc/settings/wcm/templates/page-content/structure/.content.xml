@@ -3,6 +3,8 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2024-09-24T12:47:26.132-04:00"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/xfheaderpoc/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="xfheaderpoc/components/page">
@@ -19,19 +21,18 @@
                 sling:resourceType="xfheaderpoc/components/container"
                 layout="responsiveGrid">
                 <title
+                    jcr:created="{Date}2024-09-24T12:47:07.871-04:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2024-09-24T12:47:07.871-04:00"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="xfheaderpoc/components/title"
-                    editable="{Boolean}true"/>
+                    sling:resourceType="xfheaderpoc/components/title"/>
                 <container
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="xfheaderpoc/components/container"
                     editable="{Boolean}true"
                     layout="responsiveGrid"/>
             </container>
-            <experiencefragment-footer
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="xfheaderpoc/components/experiencefragment"
-                fragmentVariationPath="/content/experience-fragments/xfheaderpoc/us/en/site/footer/master"/>
         </root>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">

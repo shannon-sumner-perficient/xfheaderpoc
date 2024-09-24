@@ -13,3 +13,12 @@ select,
 textarea {
   font: inherit;
 }
+
+main {
+  box-sizing: content-box;
+  float: none !important;
+  inline-size: calc(100% - 60px);
+  margin: 0 auto;
+  max-inline-size: 1300px;
+  padding: 0 30px;
+}

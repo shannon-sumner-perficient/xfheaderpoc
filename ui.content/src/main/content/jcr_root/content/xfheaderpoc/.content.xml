@@ -4,15 +4,21 @@
     <jcr:content
         cq:allowedTemplates="[/conf/xfheaderpoc/settings/wcm/templates/(?!xf-).*]"
         cq:conf="/conf/xfheaderpoc"
+        cq:lastModified="{Date}2024-09-24T13:06:32.902-04:00"
+        cq:lastModifiedBy="admin"
         cq:redirectTarget="/content/xfheaderpoc/us/en"
         cq:template="/conf/xfheaderpoc/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Experience Fragment Header Proof of Concept"
+        jcr:title="Three Stooges"
         sling:configRef="/conf/xfheaderpoc"
-        sling:redirect="{Boolean}true"
+        sling:redirect="true"
         sling:redirectStatus="{Long}302"
         sling:resourceType="xfheaderpoc/components/page">
-        <image jcr:primaryType="nt:unstructured">
+        <image
+            jcr:lastModified="{Date}2024-09-24T13:06:32.901-04:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0">
             <file/>
         </image>
     </jcr:content>
