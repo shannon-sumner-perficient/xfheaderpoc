@@ -45,9 +45,9 @@
           ${navigationItem.title}
         </button>
         <div class="flyout">
+          <sly data-sly-set.resourcePath="navigationItems/item${navigationItemList.index}" />
           <sly
-            data-sly-set.selector="content.${request.requestPathInfo.selectorString}"
-            data-sly-resource="${@path=navigationItem.fragmentVariationPath, selectors=selector, wcmmode='disabled'}"
+            data-sly-resource="${@ path=resourcePath, resourceType='xfheaderpoc/components/experiencefragment', wcmmode='disabled'}"
           />
         </div>
       </li>

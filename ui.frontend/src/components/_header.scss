@@ -159,6 +159,7 @@ header {
     inset-block-start: 100%;
     inset-inline-start: 100%;
     justify-content: flex-start;
+    overflow: scroll;
     padding: 30px;
     position: absolute;
     transition: transform 0.25s ease-out;
